@@ -1,0 +1,6 @@
+#home::before {
+    height: 715px;
+}
+#navbar ul li a {
+    padding: 0px 3px;
+}

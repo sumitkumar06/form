@@ -1,0 +1,234 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Baloo Bhai 2', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
+    color: #262524;
+    margin: 0px;
+    padding: 0px;
+    background-repeat: no-repeat;
+}
+
+
+/* Naviagtion Bar: Logo and Image */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    /* padding: 10px; */
+    z-index: 1000;
+    background-color: #26252469;
+}
+
+#logo{
+    margin: 10px 3px;
+    filter: invert();
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;    
+}
+
+/* Naviagtion Bar: List Styling */
+#navbar ul{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Baloo Bhai 2', cursive;
+    /* background-color: yellow; */
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: rgb(15, 12, 8);
+    display: block;
+    font-weight: 500;
+    padding: 3px 40px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar ul li a:hover{
+    color: rgb(228, 247, 58);
+    background-color: rgb(70, 21, 21);
+}
+
+#btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbtn{
+    border-radius: 15px;
+    height: 40px;
+    width: 130px;
+    color: black;
+    font-size: 18px;
+    background-color: #9e7676;
+    border: 0px;
+    cursor: pointer;
+    margin: 6px;
+}
+
+.navbtn:hover{
+    background-color: #5e4747;
+    color: rgb(133, 133, 228);
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 545px;
+    justify-content: center;
+    align-items: center;
+}   
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(../img/bg5.webp) no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 695px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    border-radius: 2px;
+}
+
+#home h1{
+    font-size: 45px;
+    color: rgb(40 74 4);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.mov{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+    width: 80%;
+    font-family: cursive;
+    color: blue;
+    font-size: 30px;
+    
+}
+.mar{
+    width: 100%;
+}
+
+.joinbtn{
+    font-family: 'Bree Serif', serif;
+    border: 2px solid green;
+    border-radius: 50px;
+    height: 50px;
+    width: 150px;
+    color: black;
+    font-size: 18px;
+    background-color: #9e7676;
+    border: 0px;
+    cursor: pointer;
+}
+.joinbtn:hover{
+    background-color: #5e4747;
+    color: rgb(133, 133, 228);
+}
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* opacity: 0.7; */
+    background: url(../img/con3.webp) no-repeat center center/cover;
+    border-radius: 2px;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea,
+#list{ 
+    width: 100%;
+    padding: 0.5rem ;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.3rem;
+}
+.btn{
+    width: 50%;
+    margin-left: 25%;
+    padding: 0.5rem ;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    background-color: #f2f2f2;
+    color: black;
+    cursor: pointer;
+    font-family: cursive;
+}
+.btn:hover{
+    background-color: #f0bbbb;
+}
+
+footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #262524;
+    border-radius: 0px 0px 10px 10px;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    text-align: right;
+    color: white;
+} 
+.copy{
+    font-family: cursive;
+    text-align: center;
+    height: 20px;
+    padding: 0px;
+}
+
+.center{
+    text-align: center;
+}
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
